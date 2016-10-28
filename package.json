@@ -1,0 +1,15 @@
+{
+  "name": "fraizait",
+  "version": "0.0.1",
+  "description": "give holidays",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next"
+  },
+  "author": "neomaxzero",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^1.0.0"
+  }
+}
