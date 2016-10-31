@@ -1,18 +1,9 @@
 import React from 'react'
 import css from 'next/css'
-
+import Application from '../components/Application';
 export default () => (
-  <div className={style}>
-    Hello world
+  <div>
+   <Application>
+   </Application>
   </div>
 )
-
-const style = css({
-  background: 'red',
-  ':hover': {
-    background: 'gray'
-  },
-  '@media (max-width: 600px)': {
-    background: 'blue'
-  }
-})

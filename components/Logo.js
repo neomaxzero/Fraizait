@@ -1,0 +1,22 @@
+import React from 'react';
+import css from 'next/css';
+
+const Logo = () => {
+  const style = css({
+    fontSize: '1.2em',
+    fontFamily: 'Roboto',
+  })
+
+  const fraiStyle = css({
+    fontWeight: 400,
+  })
+
+  return (
+    <div className={style}>
+      <span className={fraiStyle}>FRAI</span>
+      <span>ZAIT</span>
+    </div>
+  );
+};
+
+export default Logo;
