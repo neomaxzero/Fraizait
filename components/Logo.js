@@ -5,6 +5,8 @@ const Logo = () => {
   const style = css({
     fontSize: '1.2em',
     fontFamily: 'Roboto',
+    fontWeight: '100',
+    textShadow: 'rgba(0,0,0,.01) 0 0 1px',
   })
 
   const fraiStyle = css({

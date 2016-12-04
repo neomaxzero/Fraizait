@@ -12,8 +12,10 @@ const Application = ({children}) => {
   });
 
   const mainContent = css({
-    height:'100%',
-    border:'1px solid red',
+    display:'flex',
+    alignItems:'center',
+    justifyContent:'center',
+    height:'calc(100vh - 5em)',
   });
 
     return (
