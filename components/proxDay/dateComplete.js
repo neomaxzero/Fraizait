@@ -6,12 +6,20 @@ import DateBox from './dateBoxes.js';
 const DateComplete = (props) => {
 
   const style = css({
+    display: 'flex',
   });
 
   return (
     <div className={style}>
       <DateBox background={mainTextSecundary}>
         {props.dateNumber}
+      </DateBox>
+      <DateBox
+        size='6em'
+        weight='100'
+        borderLeft='none'
+      >
+        {props.dateMonth}
       </DateBox>
     </div>
   );

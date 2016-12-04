@@ -9,18 +9,20 @@ const title = () => {
     justifyContent: 'center',
     alignItems: 'center',
     color: grey,
+    marginBottom: '1em',
   });
 
   const nextStyle = css({
     fontWeight: 100,
     fontFamily: 'Helvetica Neue',
-    fontSize: '48px',
+    fontSize: '36px',
+    marginRight: '2px'
   });
 
   const HolidayStyle = css({
     fontWeight: 100,
     fontFamily: 'Helvetica Neue',
-    fontSize: '64px',
+    fontSize: '48px',
     color: mainText,
   });
   console.log('mainText');

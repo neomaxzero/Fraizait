@@ -10,9 +10,13 @@ const DateBoxes = (props) => {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    fontSize: '9.4em',
+    fontSize: props.size || '6em',
     color: mainText,
-    backgroundColor: props.background,
+    backgroundColor: props.background || 'black',
+    fontFamily: 'Roboto',
+    fontWeight: props.weight || '400',
+    borderLeft: props.borderLeft,
+
   });
   console.log(props.children)
   return (
