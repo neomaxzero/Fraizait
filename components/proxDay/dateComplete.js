@@ -2,6 +2,7 @@ import React from 'react';
 import css from 'next/css';
 import { mainTextSecundary, grey } from '../../theme.js';
 import DateBox from './dateBoxes.js';
+import Head from 'next/head';
 
 const DateComplete = (props) => {
 
@@ -11,6 +12,9 @@ const DateComplete = (props) => {
 
   return (
     <div className={style}>
+      <Head>
+        <title> FZ:> {props.dateNumber} / {props.dateMonth}</title>
+      </Head>
       <DateBox background={mainTextSecundary}>
         {props.dateNumber}
       </DateBox>

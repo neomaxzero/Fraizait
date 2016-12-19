@@ -13,15 +13,11 @@ const title = () => {
   });
 
   const nextStyle = css({
-    fontWeight: 100,
-    fontFamily: 'Helvetica Neue',
     fontSize: '36px',
     marginRight: '2px'
   });
 
   const HolidayStyle = css({
-    fontWeight: 100,
-    fontFamily: 'Helvetica Neue',
     fontSize: '48px',
     color: mainText,
   });

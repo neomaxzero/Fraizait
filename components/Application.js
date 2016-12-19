@@ -4,6 +4,7 @@ import React from 'react';
 import GlobalStyle from './GlobalStyle'
 import Logo from './Logo';
 import css from 'next/css';
+import Head from 'next/head';
 
 const Application = ({children}) => {
   const logoApp = css({
@@ -20,6 +21,9 @@ const Application = ({children}) => {
 
     return (
         <div>
+          <Head>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,400'" media="screen" title="no title"/>
+          </Head>
           <div className={logoApp}>
             <Logo />
           </div>

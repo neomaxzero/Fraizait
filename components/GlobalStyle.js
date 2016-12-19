@@ -1,11 +1,7 @@
 import React from 'react';
-import { fontFace } from 'next/css'
+import {fontFace}  from 'next/css'
 
 const GlobalStyle = () => {
-  let family = fontFace({
-    fontFamily: 'Roboto',
-    src: "url(https://fonts.googleapis.com/css?family=Roboto:100,400')",
-  })
   const style = `
     html, body {
       margin:0;
