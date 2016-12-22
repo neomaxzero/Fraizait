@@ -1,6 +1,6 @@
 import React from 'react';
 import css from 'next/css';
-
+import moment from 'moment';
 import { mainText, mainTextSecundary, greyPalid } from '../../theme.js';
 
 const DateComplete = (props) => {
@@ -17,17 +17,19 @@ const DateComplete = (props) => {
     paddingBottom: '0.5em',
     color: greyPalid,
     fontFamily: 'Roboto',
-    transition: 'background-color 0.66s, color 0.33s',    
+    transition: 'background-color 0.66s, color 0.33s',
 
     ':hover': {
       backgroundColor: mainText,
       color: '#DDD',
     }
   };
-
+  debugger;
+  console.log('props', props);
   return (
     <div className={css(style)}
-      onClick={()=> (console.log('CLICk'))}
+      onClick={()=> {
+      }}
     >
       SHOW REMAINING
     </div>

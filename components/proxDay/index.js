@@ -3,7 +3,7 @@ import css from 'next/css';
 import Title from './title.js';
 import DateComplete from './dateComplete.js';
 import Remaining from './remaining.js';
-import * as moment from 'moment';
+import moment from 'moment';
 import { pad } from '../../utils/number.js'
 import holidayService from './holiday';
 
@@ -18,7 +18,10 @@ class proxDay extends React.Component {
   componentDidMount() {
     holidayService.getHolidays()
       .then((data) => {
-          debugger;
+        const nextHoliday = holidayService.getNextHappinness(data);
+        this.setState({
+          date: nextHoliday.date,
+        })
       });
   }
 
@@ -39,7 +42,10 @@ class proxDay extends React.Component {
           dateNumber={day}
           dateMonth={monthName}
         />
-        <Remaining />
+        <Remaining
+          date={this.state.date}
+        />
+
       </div>
     );
   }
